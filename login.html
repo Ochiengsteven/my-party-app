@@ -27,22 +27,34 @@
                     position: absolute;
                     margin: 20px 0 0 auto; /* top right bottom left */
         }
+        .container {
+          padding-top: 50px;
+        }
 
 
       </style>
   </head>
 
   <body>
-    <h1 style="color: rgb(255, 255, 255);">Welcome to EVAR</h1>
-    <h3 style="color: rgb(255, 255, 255);">Find and host events with other university students and young people</h3>
+    <nav class="navbar navbar-" id="login">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">EVAR</a>
+        </div>
+    </nav>
 
-    <form id="form" class="login-form">
-      <label style="color: rgb(230, 19, 194);" for="email">Email:</label><br>
-      <input type="email" id="email" name="email" /><br>
-      <label style="color: rgb(230, 19, 194);" for="password">Password:</label><br>
-      <input type="password" id="password" name="password"/><br><br>
-      <input type="submit" value="Sign-up" class="btn btn-primary" /><br><br>
-    </form>
+    <div class="container">
+        <h1 style="color: rgb(255, 255, 255); padding: 20px;">Welcome to EVAR</h1>
+      <h3 style="color: rgb(255, 255, 255); padding: 60px;">Find and host events with other university students and young people</h3>
+
+      <form id="form" class="login-form">
+        <label style="color: rgb(230, 19, 194);" for="email">Email:</label><br>
+        <input type="email" id="email" name="email" /><br>
+        <label style="color: rgb(230, 19, 194);" for="password">Password:</label><br>
+        <input type="password" id="password" name="password"/><br><br>
+        <input type="submit" value="Sign-up" class="btn btn-primary" /><br><br>
+      </form>
+    </div>
 
     <button class="button" id="btn">Login</button>
 
