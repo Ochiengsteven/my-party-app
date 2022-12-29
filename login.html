@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EVAR - Login and Sign Up</title>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            background-image: url("party.png");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #login {
+            position: fixed;
+        }
+        /* Hide the forms by default */
+        .login-form {
+          display: none;
+        }
+        h1 {
+            position: absolute;
+            margin: 15px 30px 0 0; /* top right bottom left */
+        }
+        button.button {
+                    position: absolute;
+                    margin: 20px 0 0 auto; /* top right bottom left */
+        }
+
+
+      </style>
+  </head>
+
+  <body>
+    <h1 style="color: rgb(255, 255, 255);">Welcome to EVAR</h1>
+    <h3 style="color: rgb(255, 255, 255);">Find and host events with other university students and young people</h3>
+
+    <form id="form" class="login-form">
+      <label style="color: rgb(230, 19, 194);" for="email">Email:</label><br>
+      <input type="email" id="email" name="email" /><br>
+      <label style="color: rgb(230, 19, 194);" for="password">Password:</label><br>
+      <input type="password" id="password" name="password"/><br><br>
+      <input type="submit" value="Sign-up" class="btn btn-primary" /><br><br>
+    </form>
+
+    <button class="button" id="btn">Login</button>
+
+    <script src="party.js"></script>
+  </body>
+</html>
+
+
+
